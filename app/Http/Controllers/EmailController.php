@@ -10,7 +10,7 @@ class EmailController extends Controller
     //
     public function sendEmail()
     {
-        dispatch(new SendEmailJob());
-        echo 'email3 terkirim pakai job-queue';
+        SendEmailJob::dispatch()->onQueue('emails');
+        echo 'email3 terkirim pakai job-queue baru';
     }
 }

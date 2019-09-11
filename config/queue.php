@@ -69,7 +69,7 @@ return [
         'mongodb' => [
             'driver' => 'mongodb',
             'table' => 'jobs',
-            'queue' => 'default',
+            'queue' => 'emails',
             'retry_after' => 90,
         ],
 

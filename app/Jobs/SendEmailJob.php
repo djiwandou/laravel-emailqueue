@@ -39,6 +39,6 @@ class SendEmailJob implements ShouldQueue
     public function handle()
     {
         //
-        Mail::to('admin2@emailjob.com')->send(new SendMailable());
+        Mail::to('admin3@emailjob.com')->send(new SendMailable());
     }
 }
